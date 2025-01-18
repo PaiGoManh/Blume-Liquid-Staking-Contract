@@ -35,11 +35,11 @@ Key functions include:
 
 ---
 
-## 🔍Explore Deployed Contracts 
+## 🔍Explore Deployed and Verified Contracts 
 
-- **BLSToken Contract**: [View on Etherscan](https://sepolia.etherscan.io/address/0x758C96cF0dfA419D0bdD863724A322e02b034621)  
-- **stBLSToken Contract**: [View on Etherscan](https://sepolia.etherscan.io/address/0xB9a2D2FB4726f585BFF08A6fbf6494D3D3dC13C8)  
-- **BlumeLiquidStaking Contract**: [View on Etherscan](https://sepolia.etherscan.io/address/0x9CF0dc014d25292Aae0a649870Bb777b79A28d6b)  
+- **BLSToken Contract**: [View on Etherscan](https://sepolia.etherscan.io/address/0x758C96cF0dfA419D0bdD863724A322e02b034621#code)  
+- **stBLSToken Contract**: [View on Etherscan](https://sepolia.etherscan.io/address/0xB9a2D2FB4726f585BFF08A6fbf6494D3D3dC13C8#code)  
+- **BlumeLiquidStaking Contract**: [View on Etherscan](https://sepolia.etherscan.io/address/0x9CF0dc014d25292Aae0a649870Bb777b79A28d6b#code)  
 
 ---
 
