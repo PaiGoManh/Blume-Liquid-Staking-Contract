@@ -1,66 +1,107 @@
-# Blume Liquid Staking
+# 🌿 Blume Liquid Staking (BLS)
 
-## Overview
+Blume Liquid Staking (**BLS**) is a decentralized platform that allows users to stake `BLS` tokens and earn a staked version of the tokens, `stBLS`. This innovative solution uses **Solidity smart contracts** to provide a secure and efficient staking experience, enabling users to participate in liquid staking and retain the flexibility of their assets.
 
-**Blume Liquid Staking (BLS)** is a cryptocurrency liquid staking platform that allows users to stake their `BLS` tokens and receive a staked version of the tokens called `stBLS`. This platform uses **Solidity smart contracts** to manage the staking and unstaking process. When users stake their `BLS` tokens, they are issued `stBLS` tokens in return. These `stBLS` tokens can be later used to withdraw the original `BLS` tokens.
+## ✨ Features
 
-This project includes the following:
-- Smart contracts written in **Solidity**.
-- A **React frontend** that interacts with the Ethereum blockchain.
-- **Web3.js** integration to interact with the deployed contracts.
-
-## Key Features
-
-1. **Stake `BLS` tokens**: Users can stake their `BLS` tokens and receive `stBLS` tokens.
-2. **Unstake `BLS` tokens**: Users can burn `stBLS` tokens to get back the staked `BLS` tokens.
-3. **ERC20 Tokens**: Both `BLS` and `stBLS` are ERC20 tokens, making them tradable and easily manageable via Ethereum wallets.
-4. **Simple, decentralized**: Users do not need to trust any central authority; everything is managed through smart contracts.
+- 🔒 **Stake `BLS` Tokens**: Stake your `BLS` tokens to earn `stBLS` tokens as proof of stake.
+- 🔄 **Unstake `BLS` Tokens**: Burn your `stBLS` tokens to withdraw your original `BLS` tokens.
+- 💼 **ERC20 Compliance**: Both `BLS` and `stBLS` tokens adhere to the ERC20 standard for seamless wallet integration.
+- ⚙️ **Smart Contract Security**: All operations are managed through decentralized and secure Solidity smart contracts.
+- 🌐 **React Frontend**: An intuitive React-based frontend for user interactions.
+- 🤝 **Web3.js Integration**: Simplified interaction with Ethereum contracts.
 
 ---
 
-## Smart Contracts
+## 🔐 Smart Contracts
 
-### 1. **BLSToken Contract (ERC20)**
-- **Name**: Blume Liquid Staking
-- **Symbol**: BLS
+### 1. **BLSToken Contract** (`BLS`)
+- **Token Name**: Blume Liquid Staking
+- **Symbol**: `BLS`
 - **Decimals**: 18
-- **Initial Supply**: 1,000,000 BLS
-- This is the main ERC20 token used on the platform. Users stake this token, and the equivalent `stBLS` tokens are minted.
+- **Initial Supply**: 1,000,000 `BLS`
+  
+This ERC20 token is the primary asset of the platform. Users stake `BLS` to mint `stBLS`.
 
-#### Functions:
-- **constructor**: Sets the token name, symbol, and initial supply.
-- **_mint**: Mint new tokens to a specified address.
-
-### 2. **stBLSToken Contract (ERC20)**
-- **Name**: Staked Blume Liquid Staking
-- **Symbol**: stBLS
+### 2. **stBLSToken Contract** (`stBLS`)
+- **Token Name**: Staked Blume Liquid Staking
+- **Symbol**: `stBLS`
 - **Decimals**: 18
-- This token represents staked `BLS` tokens. For every `BLS` token staked, an equivalent amount of `stBLS` tokens is minted to the user's wallet.
-
-#### Functions:
-- **constructor**: Sets the token name and symbol for staked `BLS` tokens.
-- **mint**: Mints new `stBLS` tokens to a specified address when a user stakes `BLS` tokens.
-- **burn**: Burns `stBLS` tokens when a user wants to unstake their tokens.
+  
+The staked version of the `BLS` token. It is minted when users stake and burned when they unstake.
 
 ### 3. **BlumeLiquidStaking Contract**
-- This contract manages the staking and unstaking processes. Users can stake `BLS` tokens to mint `stBLS` tokens, and they can burn `stBLS` tokens to unstake `BLS` tokens.
+Manages the staking and unstaking of tokens, ensuring secure operations.  
+Key functions include:  
+- 📥 **Stake**: Transfers `BLS` tokens from users and mints `stBLS`.  
+- 📤 **Unstake**: Burns `stBLS` and returns equivalent `BLS` tokens.  
 
-#### Functions:
-- **constructor**: Accepts the addresses of the `BLS` and `stBLS` token contracts and sets them for interaction.
-- **stake**: Transfers `BLS` tokens from the user to the contract and mints the same amount of `stBLS` tokens to the user.
-- **unstake**: Burns `stBLS` tokens from the user and transfers the equivalent amount of `BLS` tokens back to the user.
+---
 
+## 🔍Explore Deployed Contracts 
 
-# Acknowledgments
+- **BLSToken Contract**: [View on Etherscan](https://sepolia.etherscan.io/address/0x758C96cF0dfA419D0bdD863724A322e02b034621)  
+- **stBLSToken Contract**: [View on Etherscan](https://sepolia.etherscan.io/address/0xB9a2D2FB4726f585BFF08A6fbf6494D3D3dC13C8)  
+- **BlumeLiquidStaking Contract**: [View on Etherscan](https://sepolia.etherscan.io/address/0x9CF0dc014d25292Aae0a649870Bb777b79A28d6b)  
 
-- **OpenZeppelin**: For their well-tested and secure ERC20 contracts.
+---
+
+## 🚀 Setup & Installation
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-repo/blume-liquid-staking.git
+   ```
+
+2. Install dependencies:  
+   ```bash
+   npm install
+   ```
+
+3. Compile smart contracts:  
+   ```bash
+   npx hardhat compile
+   ```
+
+4. Deploy contracts:  
+   ```bash
+   npx hardhat run scripts/deploy.js --network your-network
+   ```
+
+5. Search the deployed contracts in Sepolia Etherscan (im using Sepolia Testnet for Deploying )
+
+---
+
+## 🔧 Environment Setup
+
+Create a `.env` file with the following variables:
+```
+PRIVATE_KEY=your_private_key
+INFURA_PROJECT_ID=your_infura_project_id
+```
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to improve Blume Liquid Staking. To contribute:
+1. 🍴 Fork the repository.
+2. 🌿 Create a feature branch.
+3. 💾 Commit your changes.
+4. 🚀 Push to the branch.
+5. 📬 Submit a pull request.
+
+---
+
+## 🛠 Acknowledgments
+
+- **OpenZeppelin**: For secure and well-tested smart contract templates.
 - **Ethereum Community**: For building and maintaining the Ethereum blockchain and its tools.
 
-
-# License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-# Contributing
-
-If you'd like to contribute to this project, feel free to fork this repository, make changes, and submit a pull request. We welcome improvements and bug fixes!
+---
