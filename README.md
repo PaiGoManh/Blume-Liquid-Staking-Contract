@@ -1,4 +1,4 @@
-# 🌿 Blume Liquid Staking (BLS)
+#  🪙 Blume Liquid Staking (BLS)
 
 Blume Liquid Staking (**BLS**) is a decentralized platform that allows users to stake `BLS` tokens and earn a staked version of the tokens, `stBLS`. This innovative solution uses **Solidity smart contracts** to provide a secure and efficient staking experience, enabling users to participate in liquid staking and retain the flexibility of their assets.
 
@@ -8,8 +8,6 @@ Blume Liquid Staking (**BLS**) is a decentralized platform that allows users to 
 - 🔄 **Unstake `BLS` Tokens**: Burn your `stBLS` tokens to withdraw your original `BLS` tokens.
 - 💼 **ERC20 Compliance**: Both `BLS` and `stBLS` tokens adhere to the ERC20 standard for seamless wallet integration.
 - ⚙️ **Smart Contract Security**: All operations are managed through decentralized and secure Solidity smart contracts.
-- 🌐 **React Frontend**: An intuitive React-based frontend for user interactions.
-- 🤝 **Web3.js Integration**: Simplified interaction with Ethereum contracts.
 
 ---
 
