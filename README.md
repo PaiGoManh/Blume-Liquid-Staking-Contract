@@ -1,6 +1,6 @@
 #  🪙 Blume Liquid Staking (BLS)
 
-Blume Liquid Staking (**BLS**) Contract allows users to stake their BLS tokens and receive stBLS tokens in return. It’s a simple staking mechanism where for every BLS token staked, the user receives an equivalent amount of stBLS tokens, which can later be unstaked to receive the original BLS tokens back. 
+Blume Liquid Staking (**BLS**) Contract allows users to stake their BLS tokens and receive stBLS tokens in return. It’s a simple staking mechanism where for every BLS token staked, the user receives an equivalent amount of stBLS tokens, which can later be unstaked to receive the original BLS tokens back.
 ## ✨ Features
 
 - 🔒 **Stake `BLS` Tokens**: Stake your `BLS` tokens to earn `stBLS` tokens as proof of stake.
